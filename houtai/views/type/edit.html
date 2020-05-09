@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类别修改</title>
+</head>
+<body>
+<!--The content below is only a placeholder and can be replaced.-->
+
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+
+
+<link rel="stylesheet" href="/css/basic.css">
+
+<% include   ../public/top.html %>
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <% include   ../public/left.html %>
+
+        <div class="col-sm-10">
+            <ol class="breadcrumb">
+                <li class="active">类别管理
+                </li>
+                <li class="active">修改类别
+                </li>
+            </ol>
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    修改类别
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive input-form">
+                        <form action="/type/doEdit" method="post" enctype="multipart/form-data">
+                            <ul>
+                                <li>  类别名称: <input type="text" name="typename" value="<%= type.typename %>" placeholder="类别名称"/></li>
+
+                                <li>  类别图片: <input type="file" name="picname"/></li>
+                                <input type="hidden" value="<%= type.picname %>" name="oldPic">
+                                <input type="hidden" value="<%= type._id %>" name="id">
+                                <li>
+                                    <br/>
+                                    <button type="submit" class="btn btn-default">修改</button>
+                                </li>
+
+                            </ul>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

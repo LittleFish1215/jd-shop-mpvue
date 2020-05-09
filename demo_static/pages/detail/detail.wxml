@@ -1,0 +1,39 @@
+<view>
+	<view>
+		<view class="imgBox">
+			<image mode="widthFix" src="http://img12.360buyimg.com/mobilecms/s372x372_jfs/t1/33229/2/14198/179661/5d0c4339Eb225d750/79620ae87f657a5f.jpg"></image>
+		</view>
+		<view class="goods_detail_box">
+			<view class="goods_stock">12345个</view>
+			<view class="goods_name">
+				仙麟 2019年夏季新款港风短袖衬衫男韩版休闲宽松百搭五分袖格子潮流衬衣 红色 XL
+			</view>
+			<view class="goods_price">
+				￥80
+			</view>
+		</view>
+	</view>
+	<view class="bottom_Bar">
+		<view class="navItemBox">
+			<image class="navImg" mode="widthFix" src="/assets/images/img/my.png"></image>
+			<view>客服</view>
+		</view>
+		<view class="navItemBox">
+			<image class="navImg" mode="widthFix" src="/assets/images/img/ico10.png"></image>
+			<view>店铺</view>
+		</view>
+		<view class="navItemBox ">
+			<view class="navCart">
+				<image class="navImg" mode="widthFix" src="/assets/images/img/cart.png"></image>
+				<view class="cartTag">1</view>
+			</view>
+			<view>购物车</view>
+		</view>
+		<view class="addCart">
+			<button class="navBtn">加入购物车</button>
+		</view>
+		<view>
+			<button class="navBtn goBuy">立即购买</button>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,36 @@
+<view>
+	<block wx:if="{{cartList.length==0}}">
+		<view class="cart_message" >赶快去选择您心爱的商品吧</view>
+	</block>
+
+	<view class="cart_container">
+		<view class='cart_item' wx:for="{{cartList}}" wx:key="*this">
+			<checkbox checked="{{selectOne}}" data-index="{{index}}" bindtap="selectOne"></checkbox>
+			<image src='{{item.cart_pro_img}}'></image>
+			<view class='cart_info'>
+				<view class='cart_info_hd'>
+					<view class='cart_pro_name'>{{item.cart_pro_name}}</view>
+					<view class='cart_pro_price'>￥{{item.cart_pro_price}}</view>
+				</view>
+				<view class='cart_info_bd'>
+					<text>-</text>
+					<text>{{item.cart_pro_num}}</text>
+					<text>+</text>
+					<text>X</text>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class='cart_bottom'>
+  <checkbox-group bindchange="allSelectChange">
+		<label>
+      <checkbox value="全选"></checkbox>全选
+		</label>
+  </checkbox-group>
+		<view>
+			￥999 去付款
+		</view>
+	</view>
+
+</view>

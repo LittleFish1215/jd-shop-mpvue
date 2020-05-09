@@ -1,0 +1,67 @@
+/* pages/cart/cart.wxss */
+.cart_container{
+  padding-bottom: 120rpx;
+}
+.cart_message{
+   width:70%;
+   height: 80rpx;
+   line-height: 80rpx;
+  text-align: center;
+  background:#eee;
+ 
+  margin:30px auto;
+  border-radius: 40rpx;
+}
+.cart_item{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.cart_item image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 15rpx;
+}
+
+.cart_pro_name{
+   overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /*多行*/
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-size: 30rpx;
+}
+
+.cart_info{
+  width:500rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart_info_hd,.cart_info_bd{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background: red;
+  color: white;
+}
+.cart_bottom label{
+  margin-left: 15rpx;
+}
+.cart_bottom view{
+  margin-right: 15rpx;
+}

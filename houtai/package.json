@@ -1,0 +1,24 @@
+{
+  "name": "houtai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start":"nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.1",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.7.12",
+    "nodemon": "^2.0.2"
+  }
+}

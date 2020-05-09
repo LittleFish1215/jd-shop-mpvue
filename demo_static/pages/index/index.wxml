@@ -1,0 +1,158 @@
+<view>
+	<!-- 打开APP -->
+	<view class="openAppBox">
+		<view class="openAppMark">
+			<view>
+				<image class="close" src="/assets/images/img/close.png"></image>
+			</view>
+			<view>
+				<image src="/assets/images/img/logo.png" class="logo"></image>
+			</view>
+			<view><text>打开京东App，购物更轻松</text></view>
+		</view>
+		<view class="openNow">
+			立即打开
+		</view>
+	</view>
+
+	<!-- banner图 -->
+	<view class="swiper swiper1">
+		<swiper indicator-dots='true' indicator-color='rgba(51, 51, 51, .6)' indicator-active-color='#fff' autoplay='true' circular='true'>
+			<swiper-item wx:for="{{swiperList}}" wx:key="*this">
+				<image mode="widthFix" src="{{item}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<!-- 选项轮播 -->
+	<view class="mallBox">
+		<swiper indicator-dots='true' indicator-color='#b2b2b2' indicator-active-color='#000'>
+			<swiper-item>
+				<view class="tabItem">
+					<view>
+						<image src="/assets/images/img/ico1.png"></image>
+						<view>京东超市</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico2.png"></image>
+						<view>数码电器</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico3.png"></image>
+						<view>京东服饰</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico4.png"></image>
+						<view>京东生鲜</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico5.png"></image>
+						<view>京东到家</view>
+					</view>
+				</view>
+				<view class="tabItem">
+					<view>
+						<image src="/assets/images/img/ico6.png"></image>
+						<view>京东超市</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico1.png"></image>
+						<view>充值缴费</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico7.png"></image>
+						<view>9.9元拼</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico8.png"></image>
+						<view>领券</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico9.png"></image>
+						<view>赚钱</view>
+					</view>
+				</view>
+				<view></view>
+			</swiper-item>
+			<swiper-item>
+				<view class="tabItem">
+					<view>
+						<image src="/assets/images/img/ico1.png"></image>
+						<view>京东超市</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico2.png"></image>
+						<view>数码电器</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico3.png"></image>
+						<view>京东服饰</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico4.png"></image>
+						<view>京东生鲜</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico5.png"></image>
+						<view>京东到家</view>
+					</view>
+				</view>
+				<view class="tabItem">
+					<view>
+						<image src="/assets/images/img/ico6.png"></image>
+						<view>京东超市</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico1.png"></image>
+						<view>充值缴费</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico7.png"></image>
+						<view>9.9元拼</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico8.png"></image>
+						<view>领券</view>
+					</view>
+					<view>
+						<image src="/assets/images/img/ico10.png"></image>
+						<view>PLUS会员</view>
+					</view>
+				</view>
+				<view></view>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<!-- 为你推荐 -->
+	<view class="mainBox">
+		<view class="recommend">
+			<image mode="widthFix" src="/assets/images/img/index_wntj.png"></image>
+			<view class="mallListBox">
+				<view class="clearfix">
+					<view class="mallItem" wx:for="{{mallList}}" wx:key="*this">
+						<view>
+							<image
+              mode="widthFix"
+               src="{{item.goods_img_src}}"></image>
+						</view>
+						<view class="goodDetailBox">
+              <view class="goodTitle">
+                {{item.goods_name}}
+              </view>
+              <view class="goodOtherInfo">
+              <view>
+                <text class="price">￥{{item.goods_price}}</text>
+                <text class="tag">{{item.goods_tags}}</text>
+              </view>
+                <text class="similar">看相似</text>
+              </view>
+            </view>
+					</view>
+          
+				</view>
+			</view>
+		</view>
+
+	</view>
+</view>

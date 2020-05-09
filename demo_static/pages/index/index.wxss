@@ -1,0 +1,114 @@
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.openAppBox {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.openAppMark {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  width: 75%;
+  height: 40px;
+  background-color: rgba(51, 51, 51, .6);
+  font-size: 14px;
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.openNow {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.swiper,
+swiper-item,
+swiper {
+  width: 100%;
+}
+
+.swiper1 swiper-item image {
+  width: 100%;
+  /* height: auto; */
+}
+.tabItem{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.tabItem>view{
+  min-width: 54px;
+}
+.tabItem image{
+  width:70rpx;
+  height: 70rpx;
+}
+.recommend image{
+  width: 100%;
+}
+.mainBox{
+  margin-top: 20px;
+}
+.mallListBox{
+  padding-top: 10px;
+  background-color: #f1f2f6;
+}
+
+.mallItem{
+  float: left;
+  margin: 12.5rpx;
+  width: 340rpx;
+  background-color: #fff;
+}
+
+.mallItem image{
+  width: 100%;
+}
+.mallItem .goodTitle{
+  width: 100%;
+  margin: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.mallItem .goodOtherInfo{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color:#ff0000;
+  padding-bottom: 10px;
+}
+
+.mallItem .goodOtherInfo .tag{
+  margin-left: 5px;
+  padding: 3px;
+  border: 1px solid #ff0000;
+}
+.mallItem .goodOtherInfo .similar{
+  margin-right: 5px;
+  padding: 3px;
+  border: 1px solid #eee;
+  color: #888;
+}
